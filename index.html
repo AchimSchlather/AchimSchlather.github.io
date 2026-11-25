@@ -150,6 +150,13 @@
     .orcid-id {
       white-space: nowrap;
     }
+
+    .affiliation-location {
+      display: block;
+      margin-top: 0.1rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
     
   </style>
 </head>
@@ -159,8 +166,21 @@
   <div class="page">
     <header class="intro">
       <h1>Achim Schlather</h1>
-      <p class="affiliation">Doctoral student<br><br>Institut Élie Cartan de Lorraine, CNRS, Université de Lorraine, Metz, France<br>Inria, LORIA, Nancy, France</p>
-      <p class="bio">I am currently working under the supervision of Mathieu Hoyrup, Matteo D'Achille and Thomas Stoll on the subject "Communication structures in tilings"</p>
+      <div class="affiliation">
+        <p class="position">[Position]</p>
+        <ul class="affiliation-list" role="list">
+        <li>
+        Institut Élie Cartan de Lorraine<br>
+        Université de Lorraine · CNRS
+        <span class="affiliation-location">Metz, France</span>
+        </li>
+        <li>
+        Centre Inria de l’Université de Lorraine<br>
+        LORIA
+        <span class="affiliation-location">Nancy, France</span>
+        </li>
+        </ul>
+      </div>
 
       <nav aria-label="Page sections">
         <ul class="nav-list" role="list">
